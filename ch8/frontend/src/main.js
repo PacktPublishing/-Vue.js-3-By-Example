@@ -9,7 +9,7 @@ axios.interceptors.request.use((config) => {
   }
   return {
     ...config, headers: {
-      Authorization: `Bearer ${localStorage.getItem("token")}`,
+      Authorization: `Bearer ${localStorage.getItem('token')}`,
     }
   }
 }, (error) => {
@@ -18,7 +18,7 @@ axios.interceptors.request.use((config) => {
 
 axios.interceptors.response.use((response) => {
   const { data: { status } } = response;
-  if (status === "Token is Expired") {
+  if (status === 'Token is Expired') {
     router.push('/login');
   }
   return response;
