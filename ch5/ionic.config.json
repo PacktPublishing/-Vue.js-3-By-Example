@@ -1,0 +1,7 @@
+{
+  "name": "vue-example-ch5-calculator",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
