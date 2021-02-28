@@ -79,7 +79,7 @@ const root = {
 }
 
 const authMiddleware = (req, res, next) => {
-  const { query } = req.body
+  const { query = '' } = req.body
   const token = req.get('authorization')
   const requiresAuth = query.includes('removeOrder') ||
     query.includes('removeShopItem') ||
