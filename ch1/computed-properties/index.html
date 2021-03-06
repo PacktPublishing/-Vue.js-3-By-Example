@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Vue App</title>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app">
+    <p>{{message}}</p>
+    <p>{{reversedMessage}}</p>
+  </div>
+  <script>
+    const App = {
+      data() {
+        return {
+          message: "hello world"
+        };
+      },
+      computed: {
+        reversedMessage() {
+          return this.message.split("").reverse().join("");
+        }
+      }
+    };
+
+    const app = Vue.createApp(App);
+    app.mount("#app");
+  </script>
+</body>
+
+</html>

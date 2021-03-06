@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Vue App</title>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app">
+    <span v-html="rawHtml"></span>
+  </div>
+  <script>
+    const App = {
+      data() {
+        return {
+          rawHtml: `<b>hello world</b>`
+        };
+      }
+    };
+
+    const app = Vue.createApp(App);
+    app.mount("#app");
+  </script>
+</body>
+
+</html>

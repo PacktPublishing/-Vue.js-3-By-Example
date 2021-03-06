@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Vue App</title>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app">
+    <button @click="count++">increment</button>
+    count: {{ count }}
+  </div>
+  <script>
+    const Counter = {
+      data() {
+        return {
+          count: 0
+        };
+      }
+    };
+
+    Vue.createApp(Counter).mount("#app");
+  </script>
+</body>
+
+</html>

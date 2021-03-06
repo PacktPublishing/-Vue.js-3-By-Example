@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Vue App</title>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app">
+    <span v-if="show">hello world</span>
+  </div>
+  <script>
+    const App = {
+      data() {
+        return {
+          show: true
+        };
+      }
+    };
+
+    Vue.createApp(App).mount("#app");
+  </script>
+</body>
+
+</html>

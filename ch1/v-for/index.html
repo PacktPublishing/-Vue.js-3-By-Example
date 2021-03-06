@@ -1,0 +1,43 @@
+write the following code:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Vue App</title>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <ol>
+        <todo-item v-for="todo in todos" :key="todo.id" :todo="todo">
+        </todo-item>
+      </ol>
+    </div>
+  </div>
+  <script>
+    const App = {
+      data() {
+        return {
+          todos: [
+            { id: 1, description: "eat" },
+            { id: 2, description: "drink" },
+            { id: 3, description: "sleep" }
+          ]
+        };
+      }
+    };
+
+    const app = Vue.createApp(App);
+
+    app.component("todo-item", {
+      props: ["todo"],
+      template: `<li>{{todo.description}}</li>`
+    });
+
+    app.mount("#app");
+  </script>
+</body>
+
+</html>
