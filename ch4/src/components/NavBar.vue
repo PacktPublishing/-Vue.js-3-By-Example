@@ -10,9 +10,6 @@
       <li>
         <router-link to="/search">Search Photos</router-link>
       </li>
-      <li>
-        <a href="#" @click="logOut">Log Out</a>
-      </li>
     </ul>
   </nav>
 </template>

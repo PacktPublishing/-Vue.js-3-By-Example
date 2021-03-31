@@ -1,21 +1,37 @@
 <template>
   <div class="form">
-    <h1>{{edit ? 'Edit' : 'Add'}} Photo</h1>
+    <h1>{{ $route.params.id ? "Edit" : "Add" }} Photo</h1>
     <form @submit.prevent="submit">
       <div>
         <label for="name">Name</label>
         <br />
-        <input type="text" v-model="form.name" name="name" id="name" class="form-field" />
+        <input
+          type="text"
+          v-model="form.name"
+          name="name"
+          id="name"
+          class="form-field"
+        />
       </div>
       <div>
         <label for="dscription">Description</label>
         <br />
-        <textarea v-model="form.description" name="description" id="description" class="form-field"></textarea>
+        <textarea
+          v-model="form.description"
+          name="description"
+          id="description"
+          class="form-field"
+        ></textarea>
       </div>
       <div>
         <label for="dateTaken">Date Taken</label>
         <br />
-        <input type="datetime-local" name="dateTaken" id="dateTaken" v-model="form.dateTaken" />
+        <input
+          type="datetime-local"
+          name="dateTaken"
+          id="dateTaken"
+          v-model="form.dateTaken"
+        />
       </div>
       <div>
         <label for="photoFile">Photo</label>
@@ -37,15 +53,6 @@ import { APIURL } from "../constant";
 
 export default {
   name: "PhotoForm",
-  props: {
-    edit: {
-      type: Boolean,
-      default: false,
-    },
-    id: {
-      type: String,
-    },
-  },
   data() {
     return {
       form: {
@@ -63,9 +70,9 @@ export default {
         alert("All fields are required");
         return;
       }
-
-      if (this.edit) {
-        await axios.put(`${APIURL}/photos/${this.id}`, this.form);
+      const { id } = this.$route.params;
+      if (id) {
+        await axios.put(`${APIURL}/photos/${id}`, this.form);
       } else {
         await axios.post(`${APIURL}/photos`, this.form);
       }
@@ -80,8 +87,9 @@ export default {
     },
   },
   async beforeMount() {
-    if (this.edit) {
-      const { data } = await axios.get(`${APIURL}/photos/${this.id}`);
+    const { id } = this.$route.params;
+    if (id) {
+      const { data } = await axios.get(`${APIURL}/photos/${id}`);
       this.form = data;
     }
   },
