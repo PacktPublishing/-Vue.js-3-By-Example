@@ -7,7 +7,9 @@ This is the code repository for [Vue.js 3 By Example](https://www.packtpub.com/p
 **Build eight real-world applications from the ground up using Vue 3, Vuex, and PrimeVue**
 
 ## What is this book about?
-First Paragraph from the Long Description
+With its huge ecosystem and wide adoption, Vue is one of the leading frameworks thanks to its ease-of-use when developing applications. This book will help you understand how you can leverage Vue effectively to develop impressive apps quickly using its latest version – Vue 3.0.
+The book takes an example-based approach to help you get to grips with the basics of Vue 3 and create a simple application by exploring features such as components and directives. You'll then enhance your app building skills by learning how to test the app with Jest and Vue Test Utils. As you advance, you’ll understand how to write non-web apps with Vue 3, create cross-platform desktop apps with the Electron plugin, and build a multipurpose mobile app with Vue and Ionic. You'll also be able to develop web apps with Vue 3 that interact well with GraphQL APIs. Finally, you’ll build a chat app that performs real-time communication using Vue 3 and Laravel.
+By the end of this Vue.js book, you’ll have developed the skills you need to build real-world apps using Vue 3 by working through a range of projects.
 
 This book covers the following exciting features: 
 * Get to grips with Vue architecture, components, props, directives, mixins, and other advanced features
