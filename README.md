@@ -63,10 +63,6 @@ With the following software and hardware list you can run all code files present
 
 * Vue.js 3 Cookbook [[Packt]](https://www.packtpub.com/product/vue-js-3-cookbook/9781838826222) [[Amazon]](https://www.amazon.com/dp/183882622X)
 
-## Get to Know the Author(s)
+## Get to Know the Author
 **John Au-Yeung **
 is a front end developer that has extensive experience with the latest front end technologies.He has an M.Sc. in information technology and a B.Sc. in Mathematics. He is also a part-time blogger writing about the latest front end development technologies. In addition, he is an author of many self-published books about JavaScript programming. He has extensive experience with Vue and React and loves working with both. Also, JavaScript programming is his focus and what he does every day.
-
-## Other books by the authors
-* [Mastering Linux Network Administration](https://www.packtpub.com/networking-and-servers/mastering-linux-network-administration?utm_source=github&utm_medium=repository&utm_campaign=9781784399597)
-* [Linux Mint Essentials](https://www.packtpub.com/networking-and-servers/linux-mint-essentials?utm_source=github&utm_medium=repository&utm_campaign=9781782168157)
