@@ -7,7 +7,7 @@
       </li>
       <li>username: {{userData.login}}</li>
       <li>followers: {{userData.followers}}</li>
-      <li>plan: {{userData.pla && userData.plan.name}}</li>
+      <li>plan: {{userData.plan && userData.plan.name}}</li>
     </ul>
   </div>
 </template>
