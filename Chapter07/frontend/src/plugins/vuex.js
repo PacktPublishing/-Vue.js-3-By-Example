@@ -16,7 +16,7 @@ const store = createStore({
     addCartItem(state, cartItem) {
       const cartItemIds = state.cartItems.map(c => c.cartItemId).filter(id => typeof id === 'number')
       state.cartItems.push({
-        cartItemId: cartItemIds.length > 0 ? Math.max(...cartItemIds) : 1,
+        cartItemId: cartItemIds.length > 0 ? (Math.max(...cartItemIds) + 1) : 1,
         ...cartItem
       })
     },
