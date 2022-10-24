@@ -57,3 +57,7 @@ With the following software and hardware list you can run all code files present
 ## Get to Know the Author
 **John Au-Yeung**
 is a front end developer that has extensive experience with the latest front end technologies.He has an M.Sc. in information technology and a B.Sc. in Mathematics. He is also a part-time blogger writing about the latest front end development technologies. In addition, he is an author of many self-published books about JavaScript programming. He has extensive experience with Vue and React and loves working with both. Also, JavaScript programming is his focus and what he does every day.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781838826345">https://packt.link/free-ebook/9781838826345 </a> </p>
