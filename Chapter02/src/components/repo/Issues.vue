@@ -60,7 +60,7 @@ export default {
     repo: {
       immediate: true,
       handler(val) {
-        this.getRepoIssues(this.issues, val);
+        this.getRepoIssues(this.owner, val);
       },
     },
   },
