@@ -28,7 +28,7 @@ export default {
       localStorage.setItem("github-token", this.githubToken);
     },
     clearToken() {
-      localStorage.clear();
+      localStorage.removeItem('github-token');
     },
   },
 };
